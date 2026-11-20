@@ -189,7 +189,8 @@ em { font-style: normal; }
 
 /* Quote */
 .quote { text-align: left; }
-.quote blockquote { font: 700 clamp(1.6rem, 3.2vw, 2.5rem)/1.3 var(--display); letter-spacing: -.02em; max-width: 26em; }
+.quote figure::before { content: "C"; display: block; font: 800 5rem/.8 var(--display); color: var(--garnet); margin-bottom: 10px; }
+.quote blockquote { display: grid; gap: 16px; font: 500 1.2rem/1.7 var(--display); max-width: 46em; }
 .quote figcaption { margin-top: 22px; font-size: 1rem; color: var(--muted); }
 
 /* Contact */
@@ -611,7 +612,7 @@ footer p { max-width: 62ch; }
         <div class="card-body"><span class="status">Sold</span><span class="price">$2,200,000</span><h3>156 Washington Avenue, Chatham</h3><p>4 bedrooms, 3 full baths. Represented the buyer.</p></div>
       </article>
       <article class="card">
-        <div class="card-body"><span class="status">Sold</span><span class="price">$1,330,000</span><h3>94 Sherwood Lane, Long Hill Township</h3><p>4 bedrooms, 3 full baths. <span class="ph">Represented the [seller or buyer].</span></p></div>
+        <div class="card-body"><span class="status">Sold</span><span class="price">$1,330,000</span><h3>94 Sherwood Lane, Long Hill Township</h3><p>4 bedrooms, 3 full baths. Represented the buyer.</p></div>
       </article>
     </div>
     <p class="cards-note">Listing and sale details as shown on her Sotheby's International Realty profile in November 2026.</p>
@@ -678,8 +679,8 @@ footer p { max-width: 62ch; }
 <section class="band listings quote" aria-label="Client testimonial">
   <div class="wrap">
     <figure>
-      <blockquote><span class="ph">"Truly a best-in-class real estate agent. She knows the market, keeps you informed at every step and is a skilled negotiator who always looks out for her clients. I highly recommend her."</span></blockquote>
-      <figcaption>Matt Langan, client<span class="ph">, [Town]</span></figcaption>
+      <blockquote><p>Working with Ann Marie was truly such a wonderful experience from beginning to end. Buying or selling a home is such a big milestone, and having someone you genuinely trust makes all the difference. From the very beginning, Ann Marie helped us feel informed, supported and confident throughout the entire process.</p><p>What really sets Ann Marie apart is how much she genuinely cares. Her proactiveness, attention to detail and willingness to go above and beyond really made the experience that much better and easier. We are so grateful to have had Ann Marie by our side during such an important chapter in our lives and couldn’t recommend her more highly!</p></blockquote>
+      <figcaption>Matt Langan, Madison, NJ (client)</figcaption>
     </figure>
   </div>
 </section>
