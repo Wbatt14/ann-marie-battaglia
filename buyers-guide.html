@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Buyer's Guide | Ann Marie Battaglia</title>
+<meta name="description" content="A step-by-step guide to buying a home in New Jersey, from your agent agreement and preapproval through attorney review, inspections and closing.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2712%27%20fill%3D%27%234c1227%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2742%27%20text-anchor%3D%27middle%27%20font-family%3D%27Georgia%2Cserif%27%20font-style%3D%27italic%27%20font-size%3D%2728%27%20fill%3D%27%23fbf1f3%27%3EAM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..700;1,400..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  --garnet: #7a1f3d; --garnet-deep: #4c1227; --leaf: #2f4a3c; --ink: #241a1f; --muted: #65575d;
+  --paper: #fcfafb; --blush: #f4e8ea; --line: #e4d6da; --on-dark: #fbf1f3; --on-dark-muted: #dcbfc8;
+  --rule-bg: #eef3f0;
+  --display: "Bodoni Moda", "Didot", "Times New Roman", serif;
+  --body: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.7 var(--body); }
+h1, h2, h3, p, ul, ol, figure { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+a { color: var(--garnet); }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--garnet); outline-offset: 3px; }
+.wrap { width: 100%; max-width: 1180px; margin-inline: auto; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 50; background: var(--ink); color: #fff; padding: 10px 14px; font-weight: 600; }
+.skip:focus { top: 12px; }
+
+.site-head { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--line); }
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 10px; }
+.brand { text-decoration: none; color: var(--garnet-deep); min-width: 0; }
+.brand b { display: block; font: 600 1.4rem/1.15 var(--display); }
+.brand small { display: block; margin-top: 5px; font-size: .75rem; letter-spacing: .05em; color: var(--muted); }
+.back { flex: none; font-weight: 600; font-size: .9375rem; text-decoration: none; border: 1.5px solid var(--garnet); padding: 9px 14px; border-radius: 3px; }
+.back:hover { background: var(--garnet); color: #fff; }
+
+.hero { background: var(--garnet-deep); color: var(--on-dark); }
+.hero .wrap { padding-block: clamp(48px, 7vw, 92px); display: grid; gap: 18px; }
+.eyebrow { font-size: .8125rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--garnet); }
+.hero .eyebrow { color: var(--on-dark-muted); }
+.hero h1 { font: 500 clamp(2.6rem, 6vw, 4.6rem)/1.05 var(--display); text-wrap: balance; max-width: 16ch; }
+.hero p { max-width: 60ch; font-size: 1.1875rem; color: var(--on-dark-muted); }
+.hero .meta { font-size: .9375rem; }
+
+.layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); padding-block: clamp(40px, 6vw, 80px); align-items: start; }
+.toc { position: sticky; top: 92px; display: grid; gap: 4px; font-size: .9375rem; }
+.toc p { font-weight: 700; margin-bottom: 6px; }
+.toc a { color: var(--ink); text-decoration: none; padding: 5px 0 5px 12px; border-left: 2px solid var(--line); }
+.toc a:hover { color: var(--garnet); border-left-color: var(--garnet); }
+.content { display: grid; gap: clamp(48px, 6vw, 72px); min-width: 0; }
+.content > section { display: grid; gap: 18px; min-width: 0; }
+.content h2 { font: 500 clamp(1.9rem, 3.4vw, 2.6rem)/1.12 var(--display); text-wrap: balance; color: var(--ink); }
+.content h3 { font: 600 1.15rem/1.35 var(--body); }
+.content p, .content li { max-width: 68ch; }
+.lead { font-size: 1.1875rem; color: var(--muted); }
+
+.steps { counter-reset: s; display: grid; }
+.steps > li { counter-increment: s; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 4px 18px; padding-block: 26px; border-top: 1px solid var(--line); }
+.steps > li::before { content: counter(s); grid-row: span 3; font: italic 500 2.3rem/1 var(--display); color: var(--garnet); }
+.steps > li > * { grid-column: 2; }
+.steps > li p + p, .steps > li p + ul, .steps > li ul + p { margin-top: 10px; }
+.bullets { display: grid; gap: 6px; padding-left: 20px; list-style: disc; }
+.rule { margin-top: 12px; background: var(--rule-bg); border-left: 3px solid var(--leaf); padding: 12px 16px; font-size: 1rem; }
+.rule b { display: block; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--leaf); margin-bottom: 2px; }
+
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 420px; }
+th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: .8125rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+td.num { white-space: nowrap; font-weight: 600; }
+
+.calc { background: #fff; border: 1px solid var(--line); padding: clamp(20px, 3vw, 32px); display: grid; gap: 14px; }
+.calc label { font-weight: 600; font-size: .9375rem; }
+.calc .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.calc input { font: 400 1.125rem var(--body); padding: 11px 12px; border: 1px solid #b9a7ad; border-radius: 3px; width: min(100%, 260px); }
+.calc-result { font: 500 1.9rem/1.2 var(--display); color: var(--garnet-deep); font-variant-numeric: tabular-nums; }
+.calc-note { font-size: .9375rem; color: var(--muted); }
+
+.checklist { display: grid; gap: 4px; }
+.checklist label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); background: #fff; cursor: pointer; }
+.checklist input { width: 20px; height: 20px; margin-top: 3px; flex: none; accent-color: var(--garnet); }
+.checklist input:checked + span { color: var(--muted); text-decoration: line-through; }
+.check-count { font-size: .9375rem; color: var(--muted); }
+
+.faq { display: grid; gap: 0; }
+.faq details { border-top: 1px solid var(--line); padding-block: 14px; }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; font-weight: 600; font-size: 1.0625rem; }
+.faq details p { margin-top: 10px; color: var(--muted); }
+
+.cta { background: var(--blush); padding: clamp(24px, 4vw, 40px); display: grid; gap: 14px; justify-items: start; }
+.cta h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); }
+.btn { display: inline-block; font: 600 1rem/1.2 var(--body); text-decoration: none; background: var(--garnet); color: #fff; border: 1.5px solid var(--garnet); padding: 14px 22px; border-radius: 3px; }
+.btn:hover { background: var(--garnet-deep); border-color: var(--garnet-deep); }
+.contact-lines { display: grid; gap: 2px; font-size: 1rem; }
+.sources { display: grid; gap: 8px; font-size: .9375rem; padding-left: 20px; list-style: decimal; }
+.disclaimer { font-size: .9375rem; color: var(--muted); }
+
+footer { background: var(--ink); color: var(--on-dark); padding-block: 36px; font-size: 1.0625rem; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px 40px; }
+.footer-legal { display: grid; gap: 8px; min-width: 0; }
+.footer-legal p { max-width: 62ch; }
+.footer-broker { font: 600 1.45rem/1.2 var(--display); }
+footer a { color: var(--on-dark); }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  .toc { position: static; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+}
+@media (max-width: 520px) {
+  .wrap { padding-left: max(18px, env(safe-area-inset-left, 0px)); padding-right: max(18px, env(safe-area-inset-right, 0px)); }
+  .brand b { font-size: 1.2rem; }
+  .steps > li { grid-template-columns: 40px minmax(0, 1fr); }
+  .steps > li::before { font-size: 1.8rem; }
+}
+@media print {
+  .site-head, .toc, .back, .skip, .cta .btn { display: none !important; }
+  .layout { grid-template-columns: 1fr; padding-block: 16px; }
+  .hero { background: none; color: var(--ink); }
+  .hero .eyebrow, .hero p { color: var(--ink); }
+  details { display: block; } details > * { display: block; }
+  .rule { break-inside: avoid; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>Kienlen Lattmann Sotheby's International Realty</b><small>Real Estate Broker | Ann Marie Battaglia, Sales Associate</small></a>
+    <a class="back" href="index.html">Back to the website</a>
+  </div>
+</header>
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Buyer's guide</p>
+    <h1>Buying a home in New Jersey</h1>
+    <p>What to expect from your first tour to closing day, including the New Jersey rules, inspections and costs that apply to buyers.</p>
+    <p class="meta">Last reviewed November 19, 2026. General information, not legal or tax advice.</p>
+  </div>
+</section>
+<div class="wrap layout">
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <a href="#overview">Overview</a>
+    <a href="#steps">The eight steps</a>
+    <a href="#costs">Costs buyers pay</a>
+    <a href="#checklist">What to have ready</a>
+    <a href="#faq">Common questions</a>
+    <a href="#talk">Talk with Ann Marie</a>
+    <a href="#sources">Sources</a>
+  </nav>
+  <main class="content" id="main">
+    <section id="overview">
+      <h2>Buying in New Jersey, step by step</h2>
+      <p class="lead">A New Jersey purchase has a few features buyers from other states don't expect: a written agreement with your agent, a three-business-day attorney review after you sign, and inspections such as oil tank sweeps that are common here. Each step below notes the rule that applies.</p>
+    </section>
+
+    <section id="steps">
+      <h2>The eight steps</h2>
+      <ol class="steps">
+        <li>
+          <h3>Choose how you'll work with an agent</h3>
+          <p>You'll receive New Jersey's Consumer Information Statement, which explains how a brokerage can work with you: as your buyer's agent, a disclosed dual agent, a designated agent or a transaction broker. You'll then sign a written agreement, which the law calls a brokerage services agreement.</p>
+          <p>The agreement covers its term, whether it's exclusive, your agent's role and how the brokerage is paid.</p>
+          <p class="rule"><b>New Jersey rule</b>In a home purchase, the brokerage must enter into the written agreement with you before, or as soon as reasonably practical after, it starts working for you. The agreement must state that broker compensation is fully negotiable and not set by law. In New Jersey commissions are negotiable. Many MLSs also require a written agreement before you tour a home.</p>
+        </li>
+        <li>
+          <h3>Get preapproved</h3>
+          <p>A mortgage preapproval from a lender of your choice shows what you can borrow and makes your offer stronger. Ask your lender about state and federal programs you may be eligible for.</p>
+        </li>
+        <li>
+          <h3>Search and tour</h3>
+          <p>Set your must-haves, then tour homes that fit. Research the towns you're considering on your own, including property taxes, which vary by town, commute options and local services.</p>
+          <p class="rule"><b>New Jersey rule</b>Real estate licensees can't obtain or share Megan's Law information about registered sex offenders. That information comes from the county prosecutor.</p>
+        </li>
+        <li>
+          <h3>Make an offer</h3>
+          <p>Ann Marie helps you set a price using recent sales, plus the deposit, financing and inspection terms and a closing date. Review the seller's disclosure statement before you're bound by a contract.</p>
+          <p class="rule"><b>New Jersey rule</b>Sellers of residential property must complete a signed property condition disclosure statement, which includes flood risk questions. If the home was tested for radon, the seller must give you the results and any mitigation records once you sign a contract.</p>
+        </li>
+        <li>
+          <h3>Attorney review</h3>
+          <p>After both sides sign, your attorney reviews the contract and can propose changes or cancel it. Line up an attorney before you make an offer so the clock doesn't run out.</p>
+          <p class="rule"><b>New Jersey rule</b>A contract prepared by a real estate licensee becomes legally binding at the end of three business days unless an attorney for either side disapproves it. Weekends and legal holidays don't count.</p>
+        </li>
+        <li>
+          <h3>Inspections</h3>
+          <p>Inspections are your choice, though your lender may require some. Common ones in New Jersey:</p>
+          <ul class="bullets">
+            <li><b>Home inspection</b> by a licensed New Jersey home inspector.</li>
+            <li><b>Radon test</b> by a tester certified by the NJ Department of Environmental Protection.</li>
+            <li><b>Wood-destroying insect inspection</b>, often required by lenders.</li>
+            <li><b>Oil tank sweep</b>, to look for a buried heating oil tank, especially in older homes.</li>
+            <li><b>Sewer line camera inspection</b>, to check the pipe from the house to the street.</li>
+            <li><b>Lead-based paint testing</b> for homes built before 1978. Federal law gives you the opportunity to test.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Mortgage, title and insurance</h3>
+          <p>Your lender orders an appraisal and issues the mortgage commitment. Your attorney or title company orders a title search and title insurance, and often a survey. Arrange homeowners insurance, plus flood insurance if the home is in a flood zone.</p>
+        </li>
+        <li>
+          <h3>Final walk-through and closing</h3>
+          <p>Shortly before closing, walk through the home to confirm its condition and any agreed repairs. At closing, you sign the loan documents, the deed is transferred and you get the keys.</p>
+          <p class="rule"><b>Protect your money</b>Wire fraud often targets home buyers. Before wiring any money, call your attorney or title company at a phone number you already know to confirm the instructions. Never rely on wiring instructions sent by email alone.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="costs">
+      <h2>Costs buyers pay</h2>
+      <ul class="bullets">
+        <li><b>Down payment and deposit:</b> the deposit is usually held in escrow and applied at closing.</li>
+        <li><b>Lender and appraisal fees</b>, set by your lender.</li>
+        <li><b>Title insurance, title search and survey.</b></li>
+        <li><b>Attorney fees.</b></li>
+        <li><b>Inspection fees</b> for the inspections you choose.</li>
+        <li><b>Prepaid items</b>, such as property taxes and homeowners insurance held in escrow.</li>
+        <li><b>Brokerage compensation</b>, as set in your agreement, if it isn't paid by the seller. In New Jersey commissions are negotiable.</li>
+      </ul>
+      <p class="rule"><b>Changed in 2025</b>The fee on homes over $1 million, often called the "mansion tax," was paid by buyers at 1%. Since July 10, 2025, the seller pays it as a Graduated Percent Fee.</p>
+    </section>
+
+    <section id="checklist">
+      <h2>What to have ready</h2>
+      <p>Check items off as you go. Your progress is saved in this browser only.</p>
+        <p class="check-count" id="check-count" aria-live="polite"></p>
+        <div class="checklist">
+          <label><input type="checkbox" id="b-0"><span>Government-issued photo ID</span></label>
+          <label><input type="checkbox" id="b-1"><span>Mortgage preapproval letter</span></label>
+          <label><input type="checkbox" id="b-2"><span>Proof of funds for the deposit and down payment</span></label>
+          <label><input type="checkbox" id="b-3"><span>A New Jersey real estate attorney, chosen before you make an offer</span></label>
+          <label><input type="checkbox" id="b-4"><span>A list of your must-haves and nice-to-haves</span></label>
+          <label><input type="checkbox" id="b-5"><span>Inspectors lined up: home, radon, wood-destroying insect, oil tank and sewer</span></label>
+          <label><input type="checkbox" id="b-6"><span>A homeowners insurance quote</span></label>
+          <label><input type="checkbox" id="b-7"><span>Wiring instructions confirmed by phone with your attorney or title company</span></label>
+        </div>
+    </section>
+
+    <section id="faq">
+      <h2>Common questions</h2>
+      <div class="faq">
+        <details><summary>Do I have to sign an agreement before touring homes?</summary><p>New Jersey law requires a written brokerage services agreement before, or as soon as reasonably practical after, a brokerage starts working for you. Many MLSs also require one before you tour a home, so expect to sign it early.</p></details>
+        <details><summary>What is attorney review?</summary><p>A three-business-day period after you and the seller sign a contract prepared by a real estate licensee. Either side's attorney can review the contract, propose changes or cancel it. After that, the contract is binding as written.</p></details>
+        <details><summary>Do buyers still pay the "mansion tax"?</summary><p>Not for deeds recorded on or after July 10, 2025. The fee on sales over $1 million is now the seller's Graduated Percent Fee.</p></details>
+        <details><summary>Should I test for radon?</summary><p>Radon testing is common in New Jersey. Use a tester certified by the NJ Department of Environmental Protection, and ask the seller for any earlier results and mitigation records.</p></details>
+        <details><summary>Why do New Jersey buyers check for oil tanks?</summary><p>Many older homes in the state were heated with oil, sometimes from buried tanks. A tank sweep looks for one so you can address it before you buy.</p></details>
+      </div>
+    </section>
+    <section class="cta" id="talk">
+      <h2>Ready to start your search?</h2>
+      <p>Ann Marie can talk through your budget, timing and must-haves, then help you tour homes that fit.</p>
+      <div class="contact-lines">
+        <span><b>Kienlen Lattmann Sotheby's International Realty</b>, Real Estate Broker</span>
+        <span>Office phone: <a href="tel:+19733777785">973-377-7785</a></span>
+        <span>Ann Marie Battaglia, Sales Associate. Cell: <a href="tel:+19737696858">973-769-6858</a>. Email: <a href="mailto:ABattaglia@KLSIR.com">ABattaglia@KLSIR.com</a></span>
+      </div>
+      <a class="btn" href="index.html#contact">Start your home search</a>
+    </section>
+
+    <section id="sources">
+      <h2>Sources</h2>
+      <p class="disclaimer">This guide is general information, not legal, tax or financial advice. Rules change, and every sale is different. Talk with a New Jersey real estate attorney and a tax professional about your situation.</p>
+      <ol class="sources">
+        <li><a href="https://pub.njleg.gov/Bills/2024/PL24/32_.HTM">P.L.2024, c.32, real estate consumer protection law, effective August 1, 2024</a></li>
+        <li><a href="https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-5-6-2">N.J.A.C. 11:5-6.2, contracts and the attorney review clause</a></li>
+        <li><a href="https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-5-6-4">N.J.A.C. 11:5-6.4, licensee obligations, including Megan's Law</a></li>
+        <li><a href="https://www.nar.realtor/the-facts/written-buyer-agreements-101">National Association of REALTORS, written buyer agreements</a></li>
+        <li><a href="https://pub.njleg.state.nj.us/Bills/2024/PL25/69_.HTM">P.L.2025, c.69, Graduated Percent Fee</a></li>
+        <li><a href="https://law.justia.com/codes/new-jersey/title-26/section-26-2d-73/">N.J.S.A. 26:2D-73, radon test results at sale</a></li>
+        <li><a href="https://www.epa.gov/lead/real-estate-disclosure">U.S. EPA, lead-based paint disclosure for home sales</a></li>
+        <li><a href="https://www.consumerfinance.gov/about-us/blog/buying-home-watch-out-mortgage-closing-scams/">Consumer Financial Protection Bureau, mortgage closing scams</a></li>
+      </ol>
+    </section>
+  </main>
+</div>
+<footer>
+  <div class="wrap">
+    <div class="footer-legal">
+      <p class="footer-broker">Kienlen Lattmann Sotheby's International Realty, Real Estate Broker</p>
+      <p>Office: 223 Main Street, Madison, NJ 07940. Office phone: <a href="tel:+19733777785">973-377-7785</a>. Brokerage website: <a href="https://www.klsir.com/">klsir.com</a></p>
+      <p>Ann Marie Battaglia, Sales Associate.</p>
+      <p>Each office is independently owned and operated.</p>
+    </div>
+    <p>Equal Housing Opportunity</p>
+  </div>
+</footer>
+<script>
+// Checklist progress is remembered in this browser only.
+(function () {
+  var key = 'am-buyer-checklist';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) {}
+  var boxes = document.querySelectorAll('.checklist input');
+  var count = document.getElementById('check-count');
+  function update() {
+    var done = [].filter.call(boxes, function (b) { return b.checked; }).length;
+    if (count) count.textContent = done + ' of ' + boxes.length + ' ready';
+  }
+  boxes.forEach(function (box) {
+    box.checked = !!saved[box.id];
+    box.addEventListener('change', function () {
+      saved[box.id] = box.checked;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+      update();
+    });
+  });
+  update();
+})();
+
+</script>
+</body>
+</html>

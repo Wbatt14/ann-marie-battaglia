@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Seller's Guide | Ann Marie Battaglia</title>
+<meta name="description" content="A step-by-step guide to selling a home in New Jersey, from pricing and disclosure through attorney review and closing.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2712%27%20fill%3D%27%234c1227%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2742%27%20text-anchor%3D%27middle%27%20font-family%3D%27Georgia%2Cserif%27%20font-style%3D%27italic%27%20font-size%3D%2728%27%20fill%3D%27%23fbf1f3%27%3EAM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..700;1,400..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  --garnet: #7a1f3d; --garnet-deep: #4c1227; --leaf: #2f4a3c; --ink: #241a1f; --muted: #65575d;
+  --paper: #fcfafb; --blush: #f4e8ea; --line: #e4d6da; --on-dark: #fbf1f3; --on-dark-muted: #dcbfc8;
+  --rule-bg: #eef3f0;
+  --display: "Bodoni Moda", "Didot", "Times New Roman", serif;
+  --body: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.7 var(--body); }
+h1, h2, h3, p, ul, ol, figure { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+a { color: var(--garnet); }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--garnet); outline-offset: 3px; }
+.wrap { width: 100%; max-width: 1180px; margin-inline: auto; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 50; background: var(--ink); color: #fff; padding: 10px 14px; font-weight: 600; }
+.skip:focus { top: 12px; }
+
+.site-head { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--line); }
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 10px; }
+.brand { text-decoration: none; color: var(--garnet-deep); min-width: 0; }
+.brand b { display: block; font: 600 1.4rem/1.15 var(--display); }
+.brand small { display: block; margin-top: 5px; font-size: .75rem; letter-spacing: .05em; color: var(--muted); }
+.back { flex: none; font-weight: 600; font-size: .9375rem; text-decoration: none; border: 1.5px solid var(--garnet); padding: 9px 14px; border-radius: 3px; }
+.back:hover { background: var(--garnet); color: #fff; }
+
+.hero { background: var(--garnet-deep); color: var(--on-dark); }
+.hero .wrap { padding-block: clamp(48px, 7vw, 92px); display: grid; gap: 18px; }
+.eyebrow { font-size: .8125rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--garnet); }
+.hero .eyebrow { color: var(--on-dark-muted); }
+.hero h1 { font: 500 clamp(2.6rem, 6vw, 4.6rem)/1.05 var(--display); text-wrap: balance; max-width: 16ch; }
+.hero p { max-width: 60ch; font-size: 1.1875rem; color: var(--on-dark-muted); }
+.hero .meta { font-size: .9375rem; }
+
+.layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); padding-block: clamp(40px, 6vw, 80px); align-items: start; }
+.toc { position: sticky; top: 92px; display: grid; gap: 4px; font-size: .9375rem; }
+.toc p { font-weight: 700; margin-bottom: 6px; }
+.toc a { color: var(--ink); text-decoration: none; padding: 5px 0 5px 12px; border-left: 2px solid var(--line); }
+.toc a:hover { color: var(--garnet); border-left-color: var(--garnet); }
+.content { display: grid; gap: clamp(48px, 6vw, 72px); min-width: 0; }
+.content > section { display: grid; gap: 18px; min-width: 0; }
+.content h2 { font: 500 clamp(1.9rem, 3.4vw, 2.6rem)/1.12 var(--display); text-wrap: balance; color: var(--ink); }
+.content h3 { font: 600 1.15rem/1.35 var(--body); }
+.content p, .content li { max-width: 68ch; }
+.lead { font-size: 1.1875rem; color: var(--muted); }
+
+.steps { counter-reset: s; display: grid; }
+.steps > li { counter-increment: s; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 4px 18px; padding-block: 26px; border-top: 1px solid var(--line); }
+.steps > li::before { content: counter(s); grid-row: span 3; font: italic 500 2.3rem/1 var(--display); color: var(--garnet); }
+.steps > li > * { grid-column: 2; }
+.steps > li p + p, .steps > li p + ul, .steps > li ul + p { margin-top: 10px; }
+.bullets { display: grid; gap: 6px; padding-left: 20px; list-style: disc; }
+.rule { margin-top: 12px; background: var(--rule-bg); border-left: 3px solid var(--leaf); padding: 12px 16px; font-size: 1rem; }
+.rule b { display: block; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--leaf); margin-bottom: 2px; }
+
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; min-width: 420px; }
+th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: .8125rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+td.num { white-space: nowrap; font-weight: 600; }
+
+.calc { background: #fff; border: 1px solid var(--line); padding: clamp(20px, 3vw, 32px); display: grid; gap: 14px; }
+.calc label { font-weight: 600; font-size: .9375rem; }
+.calc .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.calc input { font: 400 1.125rem var(--body); padding: 11px 12px; border: 1px solid #b9a7ad; border-radius: 3px; width: min(100%, 260px); }
+.calc-result { font: 500 1.9rem/1.2 var(--display); color: var(--garnet-deep); font-variant-numeric: tabular-nums; }
+.calc-note { font-size: .9375rem; color: var(--muted); }
+
+.checklist { display: grid; gap: 4px; }
+.checklist label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); background: #fff; cursor: pointer; }
+.checklist input { width: 20px; height: 20px; margin-top: 3px; flex: none; accent-color: var(--garnet); }
+.checklist input:checked + span { color: var(--muted); text-decoration: line-through; }
+.check-count { font-size: .9375rem; color: var(--muted); }
+
+.faq { display: grid; gap: 0; }
+.faq details { border-top: 1px solid var(--line); padding-block: 14px; }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; font-weight: 600; font-size: 1.0625rem; }
+.faq details p { margin-top: 10px; color: var(--muted); }
+
+.cta { background: var(--blush); padding: clamp(24px, 4vw, 40px); display: grid; gap: 14px; justify-items: start; }
+.cta h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); }
+.btn { display: inline-block; font: 600 1rem/1.2 var(--body); text-decoration: none; background: var(--garnet); color: #fff; border: 1.5px solid var(--garnet); padding: 14px 22px; border-radius: 3px; }
+.btn:hover { background: var(--garnet-deep); border-color: var(--garnet-deep); }
+.contact-lines { display: grid; gap: 2px; font-size: 1rem; }
+.sources { display: grid; gap: 8px; font-size: .9375rem; padding-left: 20px; list-style: decimal; }
+.disclaimer { font-size: .9375rem; color: var(--muted); }
+
+footer { background: var(--ink); color: var(--on-dark); padding-block: 36px; font-size: 1.0625rem; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px 40px; }
+.footer-legal { display: grid; gap: 8px; min-width: 0; }
+.footer-legal p { max-width: 62ch; }
+.footer-broker { font: 600 1.45rem/1.2 var(--display); }
+footer a { color: var(--on-dark); }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  .toc { position: static; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+}
+@media (max-width: 520px) {
+  .wrap { padding-left: max(18px, env(safe-area-inset-left, 0px)); padding-right: max(18px, env(safe-area-inset-right, 0px)); }
+  .brand b { font-size: 1.2rem; }
+  .steps > li { grid-template-columns: 40px minmax(0, 1fr); }
+  .steps > li::before { font-size: 1.8rem; }
+}
+@media print {
+  .site-head, .toc, .back, .skip, .cta .btn { display: none !important; }
+  .layout { grid-template-columns: 1fr; padding-block: 16px; }
+  .hero { background: none; color: var(--ink); }
+  .hero .eyebrow, .hero p { color: var(--ink); }
+  details { display: block; } details > * { display: block; }
+  .rule { break-inside: avoid; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>Kienlen Lattmann Sotheby's International Realty</b><small>Real Estate Broker | Ann Marie Battaglia, Sales Associate</small></a>
+    <a class="back" href="index.html">Back to the website</a>
+  </div>
+</header>
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Seller's guide</p>
+    <h1>Selling your home in New Jersey</h1>
+    <p>What to expect from the first conversation to closing day, including the New Jersey rules and costs that apply to sellers.</p>
+    <p class="meta">Last reviewed November 19, 2026. General information, not legal or tax advice.</p>
+  </div>
+</section>
+<div class="wrap layout">
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <a href="#overview">Overview</a>
+    <a href="#steps">The nine steps</a>
+    <a href="#costs">Costs sellers pay</a>
+    <a href="#taxes">Tax points</a>
+    <a href="#checklist">Documents to gather</a>
+    <a href="#faq">Common questions</a>
+    <a href="#talk">Talk with Ann Marie</a>
+    <a href="#sources">Sources</a>
+  </nav>
+  <main class="content" id="main">
+    <section id="overview">
+      <h2>Selling in New Jersey, step by step</h2>
+      <p class="lead">Most sales follow the same path. New Jersey adds a few rules of its own, including a required disclosure form, a three-business-day attorney review and a smoke and carbon monoxide alarm certificate before closing. Each step below notes the rule that applies.</p>
+    </section>
+
+    <section id="steps">
+      <h2>The nine steps</h2>
+      <ol class="steps">
+        <li>
+          <h3>Meet, and sign a listing agreement</h3>
+          <p>Your first meeting covers your goals, timing and how Ann Marie will market the home. You'll receive New Jersey's Consumer Information Statement, which explains the ways a brokerage can work with you, such as seller's agent, disclosed dual agent, designated agent or transaction broker.</p>
+          <p>The listing agreement, which the law calls a brokerage services agreement, states the brokerage's role and compensation.</p>
+          <p class="rule"><b>New Jersey rule</b>The agreement must state that broker compensation is fully negotiable and not set by law. In New Jersey commissions are negotiable.</p>
+        </li>
+        <li>
+          <h3>Price the home with a market analysis</h3>
+          <p>Ann Marie prepares a comparative market analysis using recent sales of similar homes nearby, then you choose a list price together.</p>
+          <p class="rule"><b>New Jersey rule</b>A comparative market analysis is not an appraisal and should not be considered the equivalent of an appraisal. If your buyer finances the purchase, their lender orders the appraisal.</p>
+        </li>
+        <li>
+          <h3>Complete the disclosure statement</h3>
+          <p>You fill out and sign the state's Seller's Property Condition Disclosure Statement, answering questions about the home's condition and history to the best of your knowledge. The form includes questions about flood risk.</p>
+          <ul class="bullets">
+            <li><b>Radon:</b> if the home has been tested, you give the buyer copies of the results and any mitigation records once a contract is signed.</li>
+            <li><b>Homes built before 1978:</b> federal law requires you to disclose known lead-based paint and hazards, share available reports, provide the EPA pamphlet and give the buyer a chance to test.</li>
+          </ul>
+          <p class="rule"><b>New Jersey rule</b>Since August 1, 2024, sellers of residential property must complete and sign this disclosure statement. Your agent must also share material facts she knows about the home's physical condition.</p>
+        </li>
+        <li>
+          <h3>Prepare and market the home</h3>
+          <p>Decide which repairs and staging make sense, then plan photography, online marketing and showings. Gather records for work done on the home, such as permits, warranties and service receipts. Buyers ask for them.</p>
+        </li>
+        <li>
+          <h3>Review offers</h3>
+          <p>Ann Marie presents every written offer and counteroffer to you, unless you direct otherwise in writing. Compare more than price: the deposit, financing, inspection terms and the closing date all matter.</p>
+          <p class="rule"><b>New Jersey rule</b>Your agent must present all written offers and counteroffers in a timely manner and confirm receipt in writing to the other side.</p>
+        </li>
+        <li>
+          <h3>Attorney review</h3>
+          <p>Once both sides sign, the contract enters attorney review. During this period your attorney or the buyer's attorney can review the contract, propose changes or cancel it.</p>
+          <p class="rule"><b>New Jersey rule</b>A contract prepared by a real estate licensee becomes legally binding at the end of three business days unless an attorney for either side disapproves it. Weekends and legal holidays don't count.</p>
+        </li>
+        <li>
+          <h3>Inspections and appraisal</h3>
+          <p>The buyer typically orders a home inspection and may add radon, wood-destroying insect, oil tank and sewer line checks. Results can lead to a renegotiation of repairs or credits. If the buyer has a mortgage, the lender orders an appraisal.</p>
+        </li>
+        <li>
+          <h3>Certificates and paperwork before closing</h3>
+          <ul class="bullets">
+            <li><b>Smoke and carbon monoxide alarm certificate:</b> before a one- or two-family home changes hands, the owner needs a certificate from the local enforcing agency showing that the alarms, and a portable fire extinguisher where your town requires one, meet state rules. Some towns handle this through their own housing inspection. The certificate can't be transferred, and you must reapply if the sale doesn't happen within six months.</li>
+            <li><b>Tax forms:</b> every seller completes a GIT/REP form at closing. New Jersey residents use GIT/REP-3. Nonresidents, including sellers moving out of state, may owe an estimated income tax payment at closing unless an exemption applies.</li>
+            <li><b>Transfer fee forms:</b> most sellers file an Affidavit of Consideration (RTF-1) and pay the Realty Transfer Fee at closing.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Final walk-through and closing</h3>
+          <p>The buyer does a final walk-through shortly before closing. At closing, the deed is signed, the fees and your mortgage payoff are paid from the proceeds, and the keys change hands.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="costs">
+      <h2>Costs sellers pay in New Jersey</h2>
+      <ul class="bullets">
+        <li><b>Realty Transfer Fee:</b> paid by the seller on every deed transfer, based on the sale price. Some qualifying sellers pay a reduced rate. See the Division of Taxation's page for current rates and exemptions.</li>
+        <li><b>Graduated Percent Fee on sales over $1 million:</b> see the table below. This is the fee often called the "mansion tax."</li>
+        <li><b>Brokerage compensation:</b> as set in your listing agreement. In New Jersey commissions are negotiable.</li>
+        <li><b>Attorney fees, your mortgage payoff, prorated property taxes</b> and any repair credits you agree to.</li>
+        <li><b>Smoke and carbon monoxide alarm certificate fee</b>, set by your town.</li>
+      </ul>
+      <h3>The Graduated Percent Fee</h3>
+      <p>Since July 10, 2025, the seller pays this fee on homes that sell for more than $1 million. Before that date, buyers paid a flat 1%. The rate applies to the entire price, not only the amount above each threshold.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th scope="col">Sale price</th><th scope="col">Fee, as a share of the full price</th></tr></thead>
+          <tbody>
+            <tr><td>$1,000,000 or less</td><td class="num">None</td></tr>
+            <tr><td>Over $1,000,000 up to $2,000,000</td><td class="num">1%</td></tr>
+            <tr><td>Over $2,000,000 up to $2,500,000</td><td class="num">2%</td></tr>
+            <tr><td>Over $2,500,000 up to $3,000,000</td><td class="num">2.5%</td></tr>
+            <tr><td>Over $3,000,000 up to $3,500,000</td><td class="num">3%</td></tr>
+            <tr><td>Over $3,500,000</td><td class="num">3.5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="calc">
+        <label for="price">Estimate the Graduated Percent Fee</label>
+        <div class="row"><input id="price" inputmode="numeric" autocomplete="off" value="2,350,000" aria-describedby="calc-note"></div>
+        <p class="calc-result" id="calc-result" aria-live="polite"></p>
+        <p class="calc-note" id="calc-note">This estimate covers only the Graduated Percent Fee. The standard Realty Transfer Fee is owed in addition. Confirm the final figures with your attorney.</p>
+      </div>
+    </section>
+
+    <section id="taxes">
+      <h2>Tax points to raise with your advisor</h2>
+      <ul class="bullets">
+        <li><b>Principal residence exclusion:</b> if you owned and lived in the home as your main residence for at least two of the last five years, you may be able to exclude up to $250,000 of gain, or $500,000 for married couples filing jointly. New Jersey follows the federal rules.</li>
+        <li><b>Moving out of New Jersey:</b> sellers who move out of state are treated as nonresidents for the sale. That can mean an estimated tax payment at closing and a nonresident return for the year.</li>
+        <li><b>Homestead Benefit:</b> if you have applied and are moving, note the move on your application. Otherwise, settle the benefit at closing so it isn't credited to the new owners.</li>
+      </ul>
+    </section>
+
+    <section id="checklist">
+      <h2>Documents to gather</h2>
+      <p>Check items off as you go. Your progress is saved in this browser only.</p>
+        <p class="check-count" id="check-count" aria-live="polite"></p>
+        <div class="checklist">
+          <label><input type="checkbox" id="s-0"><span>Your deed or title insurance policy</span></label>
+          <label><input type="checkbox" id="s-1"><span>Mortgage account numbers for the payoff</span></label>
+          <label><input type="checkbox" id="s-2"><span>Your most recent property tax bills</span></label>
+          <label><input type="checkbox" id="s-3"><span>Permits and final approvals for renovations</span></label>
+          <label><input type="checkbox" id="s-4"><span>Warranties and service records for the roof, heating, cooling and appliances</span></label>
+          <label><input type="checkbox" id="s-5"><span>Radon test results and any mitigation records</span></label>
+          <label><input type="checkbox" id="s-6"><span>Oil tank records, such as a removal or closure certificate, if the home ever had one</span></label>
+          <label><input type="checkbox" id="s-7"><span>A survey of the property, if you have one</span></label>
+          <label><input type="checkbox" id="s-8"><span>Homeowners association documents, if applicable</span></label>
+          <label><input type="checkbox" id="s-9"><span>Utility account information to share with the buyer</span></label>
+        </div>
+    </section>
+
+    <section id="faq">
+      <h2>Common questions</h2>
+      <div class="faq">
+        <details><summary>Do I need a lawyer to sell my home?</summary><p>Most New Jersey sellers hire a real estate attorney. Contracts prepared by licensees include a three-business-day attorney review, and an attorney handles your side of the contract, the payoff and the closing documents.</p></details>
+        <details><summary>Who pays the "mansion tax" now?</summary><p>For deeds recorded on or after July 10, 2025, the seller pays it as the Graduated Percent Fee on sales over $1 million. The rate runs from 1% to 3.5% of the full price, depending on the price.</p></details>
+        <details><summary>What happens if I sell and move out of state?</summary><p>You're treated as a nonresident for the sale. You may need to make an estimated income tax payment at closing and file a nonresident return. Some exemptions apply, so ask your attorney or tax advisor early.</p></details>
+        <details><summary>Is a market analysis the same as an appraisal?</summary><p>No. A comparative market analysis uses recent sales to help set a list price. It is not an appraisal and should not be considered the equivalent of one.</p></details>
+        <details><summary>What if I don't know the answer to a disclosure question?</summary><p>Answer to the best of your knowledge and say when you don't know. Never guess, and talk with your attorney about anything you're unsure of.</p></details>
+      </div>
+    </section>
+    <section class="cta" id="talk">
+      <h2>Thinking about selling?</h2>
+      <p>Ann Marie can prepare a comparative market analysis for your home and walk you through each step.</p>
+      <div class="contact-lines">
+        <span><b>Kienlen Lattmann Sotheby's International Realty</b>, Real Estate Broker</span>
+        <span>Office phone: <a href="tel:+19733777785">973-377-7785</a></span>
+        <span>Ann Marie Battaglia, Sales Associate. Cell: <a href="tel:+19737696858">973-769-6858</a>. Email: <a href="mailto:ABattaglia@KLSIR.com">ABattaglia@KLSIR.com</a></span>
+      </div>
+      <a class="btn" href="index.html#contact">Request a market analysis</a>
+    </section>
+
+    <section id="sources">
+      <h2>Sources</h2>
+      <p class="disclaimer">This guide is general information, not legal, tax or financial advice. Rules change, and every sale is different. Talk with a New Jersey real estate attorney and a tax professional about your situation.</p>
+      <ol class="sources">
+        <li><a href="https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-5-6-2">N.J.A.C. 11:5-6.2, contracts and the attorney review clause</a></li>
+        <li><a href="https://pub.njleg.gov/Bills/2024/PL24/32_.HTM">P.L.2024, c.32, real estate consumer protection law, effective August 1, 2024</a></li>
+        <li><a href="https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-5-70-2-3">N.J.A.C. 5:70-2.3, smoke and carbon monoxide alarm certificate</a></li>
+        <li><a href="https://pub.njleg.state.nj.us/Bills/2024/PL25/69_.HTM">P.L.2025, c.69, Graduated Percent Fee</a></li>
+        <li><a href="https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/GraduatedPercentFeePolicies.pdf">NJ Division of Taxation, Graduated Percent Fee implementation memo, July 9, 2025</a></li>
+        <li><a href="https://www.nj.gov/treasury/taxation/realty.shtml">NJ Division of Taxation, Realty Transfer Fee</a></li>
+        <li><a href="https://www.nj.gov/treasury/taxation/documents/pdf/guides/Buying-or-Selling-a-Home-in-New-Jersey.pdf">NJ Division of Taxation, Buying or Selling a Home in New Jersey</a></li>
+        <li><a href="https://law.justia.com/codes/new-jersey/title-26/section-26-2d-73/">N.J.S.A. 26:2D-73, radon test results at sale</a></li>
+        <li><a href="https://www.epa.gov/lead/real-estate-disclosure">U.S. EPA, lead-based paint disclosure for home sales</a></li>
+        <li><a href="https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-5-6-1">N.J.A.C. 11:5-6.1(m), market analysis is not an appraisal</a></li>
+      </ol>
+    </section>
+  </main>
+</div>
+<footer>
+  <div class="wrap">
+    <div class="footer-legal">
+      <p class="footer-broker">Kienlen Lattmann Sotheby's International Realty, Real Estate Broker</p>
+      <p>Office: 223 Main Street, Madison, NJ 07940. Office phone: <a href="tel:+19733777785">973-377-7785</a>. Brokerage website: <a href="https://www.klsir.com/">klsir.com</a></p>
+      <p>Ann Marie Battaglia, Sales Associate.</p>
+      <p>Each office is independently owned and operated.</p>
+    </div>
+    <p>Equal Housing Opportunity</p>
+  </div>
+</footer>
+<script>
+// Checklist progress is remembered in this browser only.
+(function () {
+  var key = 'am-seller-checklist';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) {}
+  var boxes = document.querySelectorAll('.checklist input');
+  var count = document.getElementById('check-count');
+  function update() {
+    var done = [].filter.call(boxes, function (b) { return b.checked; }).length;
+    if (count) count.textContent = done + ' of ' + boxes.length + ' ready';
+  }
+  boxes.forEach(function (box) {
+    box.checked = !!saved[box.id];
+    box.addEventListener('change', function () {
+      saved[box.id] = box.checked;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+      update();
+    });
+  });
+  update();
+})();
+
+// Graduated Percent Fee estimate, using the tiers in P.L.2025, c.69.
+(function () {
+  var input = document.getElementById('price'), out = document.getElementById('calc-result');
+  function rate(p) {
+    if (p > 3500000) return 0.035;
+    if (p > 3000000) return 0.03;
+    if (p > 2500000) return 0.025;
+    if (p > 2000000) return 0.02;
+    if (p > 1000000) return 0.01;
+    return 0;
+  }
+  function money(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+  function update() {
+    var p = Number(String(input.value).replace(/[^0-9.]/g, ''));
+    if (!p) { out.textContent = 'Enter a sale price'; return; }
+    var r = rate(p);
+    out.textContent = r ? money(p * r) + ' (' + String(+(r * 100).toFixed(1)) + '% of ' + money(p) + ')' : 'No Graduated Percent Fee at ' + money(p);
+  }
+  input.addEventListener('input', update);
+  update();
+})();
+
+</script>
+</body>
+</html>
