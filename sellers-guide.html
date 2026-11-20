@@ -9,15 +9,15 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2712%27%20fill%3D%27%234c1227%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2742%27%20text-anchor%3D%27middle%27%20font-family%3D%27Georgia%2Cserif%27%20font-style%3D%27italic%27%20font-size%3D%2728%27%20fill%3D%27%23fbf1f3%27%3EAM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..700;1,400..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Inter:wght@400..700&display=swap">
 <style>
 :root {
   color-scheme: light;
   --garnet: #7a1f3d; --garnet-deep: #4c1227; --leaf: #2f4a3c; --ink: #241a1f; --muted: #65575d;
   --paper: #fcfafb; --blush: #f4e8ea; --line: #e4d6da; --on-dark: #fbf1f3; --on-dark-muted: #dcbfc8;
   --rule-bg: #eef3f0;
-  --display: "Bodoni Moda", "Didot", "Times New Roman", serif;
-  --body: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+  --display: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, sans-serif;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
@@ -43,7 +43,7 @@ a { color: var(--garnet); }
 .hero .wrap { padding-block: clamp(48px, 7vw, 92px); display: grid; gap: 18px; }
 .eyebrow { font-size: .8125rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--garnet); }
 .hero .eyebrow { color: var(--on-dark-muted); }
-.hero h1 { font: 500 clamp(2.6rem, 6vw, 4.6rem)/1.05 var(--display); text-wrap: balance; max-width: 16ch; }
+.hero h1 { font: 800 clamp(2.6rem, 6vw, 4.6rem)/1 var(--display); letter-spacing: -.045em; text-wrap: balance; max-width: 16ch; }
 .hero p { max-width: 60ch; font-size: 1.1875rem; color: var(--on-dark-muted); }
 .hero .meta { font-size: .9375rem; }
 
@@ -54,14 +54,14 @@ a { color: var(--garnet); }
 .toc a:hover { color: var(--garnet); border-left-color: var(--garnet); }
 .content { display: grid; gap: clamp(48px, 6vw, 72px); min-width: 0; }
 .content > section { display: grid; gap: 18px; min-width: 0; }
-.content h2 { font: 500 clamp(1.9rem, 3.4vw, 2.6rem)/1.12 var(--display); text-wrap: balance; color: var(--ink); }
+.content h2 { font: 800 clamp(1.9rem, 3.4vw, 2.6rem)/1.1 var(--display); letter-spacing: -.03em; text-wrap: balance; color: var(--ink); }
 .content h3 { font: 600 1.15rem/1.35 var(--body); }
 .content p, .content li { max-width: 68ch; }
 .lead { font-size: 1.1875rem; color: var(--muted); }
 
 .steps { counter-reset: s; display: grid; }
 .steps > li { counter-increment: s; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 4px 18px; padding-block: 26px; border-top: 1px solid var(--line); }
-.steps > li::before { content: counter(s); grid-row: span 3; font: italic 500 2.3rem/1 var(--display); color: var(--garnet); }
+.steps > li::before { content: counter(s); grid-row: span 3; font: 800 2.3rem/1 var(--display); color: var(--garnet); }
 .steps > li > * { grid-column: 2; }
 .steps > li p + p, .steps > li p + ul, .steps > li ul + p { margin-top: 10px; }
 .bullets { display: grid; gap: 6px; padding-left: 20px; list-style: disc; }
@@ -78,7 +78,7 @@ td.num { white-space: nowrap; font-weight: 600; }
 .calc label { font-weight: 600; font-size: .9375rem; }
 .calc .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .calc input { font: 400 1.125rem var(--body); padding: 11px 12px; border: 1px solid #b9a7ad; border-radius: 3px; width: min(100%, 260px); }
-.calc-result { font: 500 1.9rem/1.2 var(--display); color: var(--garnet-deep); font-variant-numeric: tabular-nums; }
+.calc-result { font: 800 1.9rem/1.2 var(--display); color: var(--garnet-deep); font-variant-numeric: tabular-nums; }
 .calc-note { font-size: .9375rem; color: var(--muted); }
 
 .checklist { display: grid; gap: 4px; }
